@@ -13,7 +13,7 @@
 set -euo pipefail
 
 REPO="hochfrequenz/software-factory-releases"
-BINARIES=("hsf" "hsf-mcp")
+BINARIES=("hsf" "hsf-mcp" "hsf-runner")
 INSTALL_DIR="${INSTALL_DIR:-$HOME/.local/bin}"
 
 # Colors
@@ -85,7 +85,7 @@ install() {
         fi
     fi
 
-    info "Installing hsf and hsf-mcp ${version}..."
+    info "Installing hsf, hsf-mcp, and hsf-runner ${version}..."
 
     # Create temp directory
     local tmp_dir
